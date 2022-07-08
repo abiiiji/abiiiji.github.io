@@ -12,7 +12,6 @@ crossorigin=""></script>
 
 
 </head>
-
 <body>
 
 <div id="location-list" style="height: 100%; width: 35%; float: left;font-family: arial">
@@ -21,20 +20,15 @@ crossorigin=""></script>
 
 <div id="map" style="height: 100%; width: 65%; float: right;"></div>
 
+<script>
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);
+}).addTo(mymap);</script>
 
 
 <title>
 Hi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-</style>
 </body>
 </html>
