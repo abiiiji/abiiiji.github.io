@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	<head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
 integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 crossorigin=""/>
-
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
 integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
 crossorigin=""></script>
-
-
-</head>
-<body>
-
-<div id="location-list" style="height: 100%; width: 35%; float: left;font-family: arial">
+	</head>
+	<body>
+		<div id="location-list" style="height: 100%; width: 35%; float: left;font-family: arial">
     <h2>Store Locations</h2>
 </div>
 
 <div id="map" style="height: 100%; width: 65%; float: right;"></div>
-
-<script>
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	<script type="text/javascript" > 
+	var mymap = 		  L.map('mapid').setView([51.505, -0.09], 13);
+	
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);</script>
+}).addTo(mymap);
 
-
-<title>
-Hi</title>
-</body>
+		</script>
+	</body>
 </html>
